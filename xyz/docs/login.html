@@ -1,0 +1,117 @@
+<div class="tabbable" id="tabs-272992">
+<ul class="breadcrumb">
+							<li>
+								http|https://<span class="divider"></span>
+							</li>
+								<li>
+								site.com <span class="divider"></span>
+							</li>
+							<li>
+								V1 <span class="divider"></span>
+							</li>
+							<li class="active">
+								<a href="/v1/login.php">login.php</a>
+							</li>
+						</ul>
+		<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#login-desc" data-toggle="tab">Description</a>
+					</li>	
+					<li class="">
+						<a href="#login-pull" data-toggle="tab">Request Variables</a>
+					</li>
+					<li>
+						<a href="#login-receive" data-toggle="tab">Returned Variables</a>
+					</li>
+					<li>
+						<a href="#login-code" data-toggle="tab">Example Code</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="login-desc">
+						<p>
+							Use this endpoint to login using the users's username and password. Unless they've already set one and registered with FB then they won't have a password. You can optionally use the Password or EncPassword depending on what you or the user prefers to use.
+						</p>
+						<p>
+						<b>Notable:</b> Tokens are valid until the next time the user credentials are used to log into the account.</p>
+					</div>
+					<div class="tab-pane" id="login-pull">
+						<span class="label label-default">Method:Post</span><p><p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										Variable
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										FacebookID
+									</td>
+									<td>
+										Username of of the user intending to login.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Password
+									</td>
+									<td>
+										The users password in clear text. Option 1 for password.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										EncPassword
+									</td>
+									<td>
+										Users password in MD5 encryption. Option 2 for password.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+					</div>
+					<div class="tab-pane" id="login-receive">
+						<p>
+						<?php
+						//include "pretty.php";
+						$url = "http://site.com/docs/login_json.html";
+						$json = file_get_contents($url);
+						$data = json_decode($json);
+						$formatjson= json_encode($data, JSON_PRETTY_PRINT);
+						echo $formatjson;
+						?>
+						</p>
+					</div>
+					<div class="tab-pane" id="login-code">
+						<p>
+							<?php
+							$code = highlight_file('./docs/login_code.php');
+							echo $code;
+							?>
+						</p>
+					</div>
+				</div>
+			</div>

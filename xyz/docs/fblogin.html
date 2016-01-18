@@ -1,0 +1,116 @@
+<div class="tabbable" id="fblogin">
+<ul class="breadcrumb">
+							<li>
+								http|https://<span class="divider"></span>
+							</li>
+								<li>
+								site.com <span class="divider"></span>
+							</li>
+							<li>
+								V1 <span class="divider"></span>
+							</li>
+							<li class="active">
+								<a href="/v1/fblogin.php">fblogin.php</a>
+							</li>
+						</ul>
+		<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#fblogin-desc" data-toggle="tab">Description</a>
+					</li>
+					<li>
+						<a href="#fblogin-pull" data-toggle="tab">Request Variables</a>
+					</li>
+					<li>
+						<a href="#fblogin-receive" data-toggle="tab">Returned Variables</a>
+					</li>
+					<li>
+						<a href="#fblogin-code" data-toggle="tab">Example Code</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="fblogin-desc">
+						<p>
+							Use this endpoint to login using the users's FB details.
+						</p>
+						<p>
+						<b>Notable:</b> Tokens are valid until the next time the user credentials are used to log into the account.</p>
+					</div>
+					<div class="tab-pane" id="fblogin-pull">
+						<span class="label label-default">Method:Post</span><p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										Variable
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										FacebookID
+									</td>
+									<td>
+										Facebook ID of the user logging in.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Password
+									</td>
+									<td>
+										The users password in clear text.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										EncPassword
+									</td>
+									<td>
+										Users password in MD5 encryption.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+					</div>
+					<div class="tab-pane" id="fblogin-receive">
+						<p>
+						<?php
+						$fburl = "http://site.com/docs/login_json.html";
+						$fbjson = file_get_contents($fburl);
+						$fbdata = json_decode($fbjson);
+						$fbformatjson= json_encode($fbdata, JSON_PRETTY_PRINT);
+						echo $fbformatjson;
+						?>
+						</p>
+					</div>
+					<div class="tab-pane" id="fblogin-code">
+						<p>
+							<?php
+							$code = highlight_file('./docs/fblogin_code.php');
+							echo $code;
+							?>
+						</p>
+					</div>
+				</div>
+			</div>

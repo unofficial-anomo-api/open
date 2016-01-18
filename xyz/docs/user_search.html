@@ -1,0 +1,129 @@
+<div class="tabbable" id="tabs-272992">
+<ul class="breadcrumb">
+							<li>
+								http|https://<span class="divider"></span>
+							</li>
+								<li>
+								site.com <span class="divider"></span>
+							</li>
+							<li>
+								V1 <span class="divider"></span>
+							</li>
+							<li class="active">
+								<a href="/v1/user_search.php">user_search.php</a>
+							</li>
+						</ul>
+		<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#user-search-desc" data-toggle="tab">Description</a>
+					</li>	
+					<li class="">
+						<a href="#user-search-pull" data-toggle="tab">Request Variables</a>
+					</li>
+					<li>
+						<a href="#user-search-receive" data-toggle="tab">Returned Variables</a>
+					</li>
+					<li>
+						<a href="#user-search-code" data-toggle="tab">Example Code</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="user-search-desc">
+						<p>
+							Use this endpoint to search for users and retrieve age, userid, username, location name, gender, and avatar.
+						</p>
+						<p>
+					</div>
+					<div class="tab-pane" id="user-search-pull">
+						<span class="label label-default">Method:Post</span><p><p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										Variable
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										Token
+									</td>
+									<td>
+										Used to validate Anomo account request.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										UserID
+									</td>
+									<td>
+										UserID tied to the Token used.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Keyword
+									</td>
+									<td>
+										Partial or full username to search.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Page
+									</td>
+									<td>
+										Optional page to list based on number of pages. By default it will be 0.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+					</div>
+					<div class="tab-pane" id="user-search-receive">
+						<p>
+						<?php
+						//include "pretty.php";
+						$url = "http://site.com/docs/user_search_json.html";
+						$json = file_get_contents($url);
+						$data = json_decode($json);
+						$formatjson= json_encode($data, JSON_PRETTY_PRINT);
+						echo $formatjson;
+						?>
+						</p>
+					</div>
+					<div class="tab-pane" id="user-search-code">
+						<p>
+							<?php
+							$code = highlight_file('./docs/user_search_code.php');
+							echo $code;
+							?>
+						</p>
+					</div>
+				</div>
+			</div>

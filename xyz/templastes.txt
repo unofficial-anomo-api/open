@@ -1,0 +1,64 @@
+Profile Widget
+http://bootsnipp.com/snippets/featured/user-profile-widget
+http://bootsnipp.com/snippets/featured/profile-box
+
+Sidebar profile 
+http://bootsnipp.com/snippets/featured/user-profile-sidebar
+
+profile top
+http://bootsnipp.com/snippets/featured/fb-like-profile-box
+
+profile searches
+http://bootsnipp.com/snippets/featured/dynamic-avatar-blur
+
+card profile
+http://bootsnipp.com/snippets/featured/people-card-with-tabs
+http://bootsnipp.com/snippets/featured/flat-user-profile-ui
+http://bootsnipp.com/snippets/featured/flat-user-profile-interface-ui
+
+
+login
+http://bootsnipp.com/snippets/featured/custom-login-registration-amp-forgot-password
+http://bootsnipp.com/snippets/featured/modal-login-with-jquery-effects
+http://bootsnipp.com/snippets/featured/login-form-in-modal
+
+mix login
+http://bootsnipp.com/snippets/featured/mix-amp-match-login
+mix registration
+http://bootsnipp.com/snippets/featured/mix-amp-match-register
+
+registration
+http://bootsnipp.com/snippets/featured/basic-register-page
+show password
+http://bootsnipp.com/snippets/featured/show-password
+
+
+process steps
+http://bootsnipp.com/snippets/featured/process-steps
+
+
+
+Treeview
+http://bootsnipp.com/snippets/featured/bootstrap-30-treeview
+
+
+Admin dashboard
+http://bootsnipp.com/snippets/featured/simple-admin
+http://bootsnipp.com/snippets/featured/admin-panel-quick-shortcuts
+
+
+chat
+http://bootsnipp.com/snippets/featured/chat-widget
+http://bootsnipp.com/snippets/featured/like-hangout-chat
+
+side nav
+http://bootsnipp.com/snippets/featured/responsive-sidebar-navigation
+
+
+Comments
+http://bootsnipp.com/snippets/featured/comments-list
+http://bootsnipp.com/snippets/OPeAE
+
+Comment box
+http://bootsnipp.com/snippets/featured/sms-box
+http://bootsnipp.com/snippets/featured/message-box-with-counter

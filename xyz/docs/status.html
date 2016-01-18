@@ -1,0 +1,114 @@
+<div class="tabbable" id="status">
+<ul class="breadcrumb">
+							<li>
+								http|https://<span class="divider"></span>
+							</li>
+								<li>
+								site.com <span class="divider"></span>
+							</li>
+							<li>
+								V1 <span class="divider"></span>
+							</li>
+							<li class="active">
+								<a href="/v1/status.php">status.php</a>
+							</li>
+						</ul>
+		<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#status-desc" data-toggle="tab">Description</a>
+					</li>
+					<li>
+						<a href="#status-pull" data-toggle="tab">Request Variables</a>
+					</li>
+					<li>
+						<a href="#status-receive" data-toggle="tab">Returned Variables</a>
+					</li>
+					<li>
+						<a href="#status-code" data-toggle="tab">Example Code</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="status-desc">
+						<p>
+							Use this endpoint to post status' as the user or anonymously from the user account.
+						</p>
+					</div>
+					<div class="tab-pane" id="status-pull">
+						<span class="label label-default">Method:Post</span><p>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										Variable
+									</th>
+									<th>
+										Description
+									</th>
+									<th>
+										
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										Token
+									</td>
+									<td>
+										User session token required to validate with Anomo.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Status
+									</td>
+									<td>
+										Text used to post status.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+							<tbody>
+								<tr>
+									<td>
+										Anonymous
+									</td>
+									<td>
+										Boolean value whether to post as anonymous. 1 is anonymous.
+									</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+					</div>
+					<div class="tab-pane" id="status-receive">
+						<p>
+						<?php
+						/*$statusurl = "http://site.com/docs/status_json.html";
+						$statusjson = file_get_contents($statusurl);
+						$statusdata = json_decode($statusjson);
+						$statusformatjson= json_encode($statusdata, JSON_PRETTY_PRINT);
+						echo $statusformatjson;*/
+						?>
+						</p>
+					</div>
+					<div class="tab-pane" id="status-code">
+						<p>
+							<?php
+							//$code = highlight_file('./docs/status_code.php');
+							//echo $code;
+							?>
+						</p>
+					</div>
+				</div>
+			</div>

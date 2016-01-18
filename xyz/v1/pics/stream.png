@@ -1,0 +1,32 @@
+<?php 
+// tell the user's browser that it is an image 
+//function avatar($avatar){
+header("Content-type: image/png"); 
+$avatar = $_GET['photo'];
+$avatar = "https://anomo-production1.s3.amazonaws.com/Stream/" . $avatar;
+// This the the back ground you will use
+$image = imagecreatefrompng("$avatar"); 
+
+// define the color black (the colour of the text) 
+$clr_black = imagecolorallocate($image, 2, 1, 8);
+
+//this is the stuff that you want to edit
+$hit = ""; //this is the hit amount
+
+
+// draw heading 
+imagestring($image, $font, 1, 15, $Title, $clr_black); 
+//this is the other lines
+{ 
+$line_number++; 
+// draw the last 5 tutorial titles 
+imagestring($image, 3, 20, 82, $hit, $clr_black); 
+} 
+$transparency = imagecolorallocatealpha($image, 0, 0, 0, 127);
+imagefill($image, 0, 0, $transparency);
+imagesavealpha($image, true);
+// and now we display the image 
+imagepng($image); 
+imagedestroy($image); 
+//}
+?> 

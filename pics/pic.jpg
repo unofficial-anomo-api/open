@@ -1,0 +1,17 @@
+<?php 
+// tell the user's browser that it is an image 
+//function avatar($avatar){
+header("Content-type: image/jpg"); 
+$avatar = $_GET['pic'];
+$avatar = "https://anomo-production1.s3.amazonaws.com/upload/" . $avatar;
+// This the the back ground you will use
+$image = imagecreatefromjpeg("$avatar"); 
+
+//$transparency = imagecolorallocatealpha($image, 0, 0, 0, 127);
+//imagefill($image, 0, 0, $transparency);
+//imagesavealpha($image, true);
+// and now we display the image 
+imagejpeg($image); 
+imagedestroy($image); 
+//}
+?> 

