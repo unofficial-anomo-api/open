@@ -1,0 +1,1 @@
+These are some simple examples in html that will show you how to interact with the api and what information is actually returned.

@@ -1,4 +1,5 @@
 <?php 
+//using imagemagik this proxies the images pulled from the avatar fields. wrote this because i didnt' want to expose the S3 bucket for whatever reason
 // tell the user's browser that it is an image 
 //function avatar($avatar){
 header("Content-type: image/jpg"); 
