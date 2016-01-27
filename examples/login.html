@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really lazy and simple example to show logging into Anomo using username and password.<br>
+The login endpoint expects UserName and Password to be passed to it in a POST request.<br>
+Username is not case sensitive however the password is hashed using MD5 encryption.<br>
+If you don't know the MD5 hash for your password, which I suspect most won't, you can use<br>
+<a href="http://www.miraclesalad.com/webtools/md5.php"><b>http://www.miraclesalad.com/webtools/md5.php</b></a> to encrypt it to use in this form.<br><br>
+			<form action="http://ws.anomo.com/v208/index.php/webservice/user/login/" method="post">
+			<br>UserName:<br>
+			<input type="text" name="UserName" size="20"><br><br>
+			Password:<br>
+			<input type="password" name="Password" size="20"><br>
+			<button type="submit" >Sign in</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
