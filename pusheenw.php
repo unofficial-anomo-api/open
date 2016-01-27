@@ -1,4 +1,5 @@
 <?php
+//modified version of the Pusheen bot as a birthday gift for @whysoserious. grabbed the feed whenever cron job (every 10 in this case) ran the script. the script only processes that set of data, usually 23 posts worth, and checks for specific words then posts acordingly.
 $token = "blank";
 
 $surl = "https://ws.anomo.com/v208/index.php/webservice/activity/get_activities/$token/1/3/-1/0/0/0/0/0";

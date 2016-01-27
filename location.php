@@ -1,4 +1,5 @@
 <?php
+//updates user location to whatever you pass to it.
 session_start();
 include "session.php";
 

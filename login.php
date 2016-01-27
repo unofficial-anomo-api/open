@@ -1,4 +1,5 @@
 <?php
+//uses username/password to login and sets session variables from results
 session_start();
 $utoken = $_GET['token'];
 //print $_SESSION['token'];

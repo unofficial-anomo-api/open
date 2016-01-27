@@ -1,4 +1,5 @@
 <?php
+//checks whether a post has already commented on by pusheen
 include "token.php";
 function userExists($phpArray2){
 $key = 0;

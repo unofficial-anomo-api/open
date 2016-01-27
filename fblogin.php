@@ -1,4 +1,5 @@
 <?php
+//facebook login using OneAll to broker the oauth authentication to retrieve facebook token, facebook id, and facebook email to login.
 session_start();
 //Check if we have received a connection_token
 

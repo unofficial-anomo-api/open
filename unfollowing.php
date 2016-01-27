@@ -1,4 +1,5 @@
 <?php
+//grabs follower list and blocks then unblocks every user so they no longer follow account
 //session_start();
 //include "header.php";
 //include "session.php";

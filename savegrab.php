@@ -1,4 +1,5 @@
 <?php 
+//used to query the database for the next head image
 session_start();
 $db = new SQLite3('db.db');
 $ids = $_GET['id'];

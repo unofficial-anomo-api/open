@@ -1,4 +1,5 @@
 <?php
+//deletes all of a users posts
 session_start();
 $userid = $_SESSION["userid"];
 $yes = $_GET['yes'];

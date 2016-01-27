@@ -1,5 +1,5 @@
 <?php
-
+//list of student mob subdomains. most of the endpoints are the same except for the version number, ususally the build number of the app.
 uo-ws.studentmob.com
 oregon-production1.s3.amazon.com
 usc-ws.studentmob.com

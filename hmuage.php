@@ -1,4 +1,5 @@
 <?php
+//script used to update HMU bot's avatar. 
 //include "token.php";
 $token = "blank";
 //$response = "d";

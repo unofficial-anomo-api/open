@@ -1,4 +1,5 @@
 <?php
+//displays anon posts from database of post ids stored...doesn't actually store the anon post it self
 session_start();
 include "session.php";
 include "header.php";

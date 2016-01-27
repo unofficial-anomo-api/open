@@ -1,5 +1,5 @@
 <?php 
-
+//left over from paypal configuration for intended premium service. should have deleted it actually.
 	require_once("config.php");
 	require_once("expressCheckoutAPI.php");
 ?>

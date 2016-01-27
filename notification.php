@@ -1,4 +1,5 @@
 <?php
+//notification list. 
 session_start();
 include "header.php";
 include "session.php";

@@ -1,4 +1,5 @@
 <?php
+//backs up post and image locations to database
 //include "header.php";
 session_start();
 $token = $_SESSION["token"];

@@ -1,4 +1,5 @@
 <?php
+//don't think i actually used this but OneAll brokers the facebook login
 /**
  * Copyright 2012 OneAll, LLC.
  *

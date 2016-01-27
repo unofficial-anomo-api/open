@@ -1,4 +1,5 @@
 <?php 
+//lego avatar function for grabbing next image file in database
 session_start();
 $db = new SQLite3('db.db');
 $ids = $_GET['id'];

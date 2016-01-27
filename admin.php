@@ -1,4 +1,5 @@
 <?php
+//SQLite3 admin thing again
 //	
 //	Project: phpLiteAdmin (http://phpliteadmin.googlecode.com)
 //	Version: 1.9.5

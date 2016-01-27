@@ -1,4 +1,5 @@
 <?php
+//standard unfollow function
 //session_start();
 //include "header.php";
 //include "session.php";

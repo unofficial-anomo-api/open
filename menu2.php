@@ -1,3 +1,6 @@
+<?php
+//simple menu i don't think i ever used
+?>
 			<nav id="leftmenu">
 				<ul>
 				<li><a href="#">Home</a></li>

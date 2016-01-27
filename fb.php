@@ -1,4 +1,5 @@
 <?php
+//lets user update their fb id on the profile to verify which login
 session_start();
 include "session.php";
 

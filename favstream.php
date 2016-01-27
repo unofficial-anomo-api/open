@@ -1,4 +1,5 @@
 <?php
+//lists the users fav streams...not really implemented in the client
 session_start();
 include "header.php";
 include "session.php";

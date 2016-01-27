@@ -1,4 +1,5 @@
 <?php 
+//left over from lego avatar i think
 session_start();
 $db = new SQLite3('db.db');
 $ids = $_GET['id'];

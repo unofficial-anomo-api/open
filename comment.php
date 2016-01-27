@@ -1,4 +1,5 @@
 <?php
+//displays comments on a post and lets you comment
 session_start();
 include "header.php";
 include "session.php";

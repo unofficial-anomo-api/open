@@ -1,4 +1,5 @@
 <?php
+//lego avatar builder front end page that pulls from database of images and layers them accordingly for display. submit.php takes passed variables and creates new file before uploading to replace avatar.
 session_start();
 include "header.php";
 include "session.php";

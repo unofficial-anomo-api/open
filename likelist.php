@@ -1,4 +1,5 @@
 <?php
+//lists users that like a particular post
 session_start();
 include "header.php";
 include "session.php";

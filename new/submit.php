@@ -1,4 +1,5 @@
 <?php
+//lego avatar upload script
 session_start();
 $hid = $_SESSION["headided"];
 $tid = $_SESSION["torsoided"];

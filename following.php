@@ -1,4 +1,5 @@
 <?php
+//lists users following list
 session_start();
 include "header.php";
 include "session.php";

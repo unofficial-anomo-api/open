@@ -1,4 +1,5 @@
 <?php
+//converts lat/lon to address using google maps api
 function getaddress($lat,$lng)
 {
 $url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='.trim($lat).','.trim($lng).'&sensor=false';

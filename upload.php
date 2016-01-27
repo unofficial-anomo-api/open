@@ -1,4 +1,5 @@
 <?php
+//uploads picture and posts to anomo
   session_start();
   include "session.php";
   $token = $_SESSION["token"];

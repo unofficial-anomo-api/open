@@ -1,4 +1,5 @@
 <?php
+//displays the feed. includes disabling notifications, deleting users post, blocking user, posting image, posting status, posting anon.
 session_start();
 include "header.php";
 include "session.php";

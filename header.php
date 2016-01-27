@@ -1,4 +1,5 @@
 <?php
+//header file for client. 
 date_default_timezone_set('America/Edmonton');
 session_start();
 $username = $_SESSION["username"];

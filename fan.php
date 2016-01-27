@@ -1,4 +1,5 @@
 <?php
+//user fan page. all users have one but only visible if HasFanPage is set to 1 is it visible. this shows it and allows you to post to it. 	
 session_start();
 include "session.php";
 

@@ -1,4 +1,5 @@
 <?php
+//a fav script to store comment value in a database for user to refer later, can't remember if i finished this
 session_start();
 include "session.php";
 include "header.php";

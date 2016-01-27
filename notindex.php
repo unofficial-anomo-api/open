@@ -1,4 +1,5 @@
 <?php
+//the index page to login to the client
 session_start();
 //include "session.php";
 //print $_SESSION['token'];

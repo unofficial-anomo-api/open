@@ -1,4 +1,5 @@
 <?php
+//displays categories from update that i never really implemented
 session_start();
 include "header.php";
 include "session.php";

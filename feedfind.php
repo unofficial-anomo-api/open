@@ -1,4 +1,5 @@
 <?php
+//searches the feed for the last 30 pages for given string
 session_start();
 include "session.php";
 include "header.php";

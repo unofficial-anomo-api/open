@@ -1,4 +1,5 @@
 <?php
+//just a todo list that wasn't update much on what needed to be done
 session_start();
 include "header.php";
 include "session.php";

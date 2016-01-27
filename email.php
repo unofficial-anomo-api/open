@@ -1,4 +1,5 @@
 <?php
+//allows user to update email on profile
 session_start();
 include "session.php";
 

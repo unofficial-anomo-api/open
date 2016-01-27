@@ -1,4 +1,5 @@
 <?php
+//script that grabs logged in user's profile and calculates difference between current user points and 130,000, then divides that value by 25 and generates that many phone numbers to submit to the invite endpoint. phone invites generates 25 user points, the most you can get for an action, thus getting the user to 130k points and automatically gets them a fan page.
 //session_start();
 include "header.php";
 include "session.php";

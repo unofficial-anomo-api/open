@@ -1,4 +1,5 @@
 <?php
+//clears the session values and invalidates token
 session_start();
 //print $_SESSION['token'];
 $url = "http://ws.anomo.com/v208/index.php/webservice/user/logout/" . $_SESSION['token'];

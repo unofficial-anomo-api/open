@@ -1,4 +1,5 @@
 <?php
+//searches through a users profile for a given string for 50 pages * 23 posts per page
 session_start();
 include "session.php";
 include "header.php";

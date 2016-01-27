@@ -1,4 +1,6 @@
 <?php
+//left over from paypal script for intended premium service. should have been deleted, too lazy
+
 	require_once('shopconfig.php');
 	require_once('expressCheckoutAPI.php');
 

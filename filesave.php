@@ -1,4 +1,5 @@
 <?php
+//downloads images based on stored locations for backing up a users image posts
 //include "header.php";
 $userid = $_GET['userid'];
 $db = new SQLite3('db.db');

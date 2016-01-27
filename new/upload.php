@@ -1,4 +1,5 @@
 <?php
+//uploads to reveal images
   session_start();
   include "session.php";
   $token = $_SESSION["token"];

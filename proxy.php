@@ -1,4 +1,5 @@
 <?php
+//simple script that checks to see if connection is made through a proxy
 $remoteaddr=$_SERVER["REMOTE_ADDR"];
 $xforward= $_SERVER["HTTP_X_FORWARDED_FOR"];
 if (empty($xforward)) {

@@ -1,5 +1,5 @@
 <?php
-
+//checks to see if server still has a valid session for the browser client and if not logs user out. Apache2 default duration is 23 minutes.
 //print $_SESSION['token'];
 $sessionsurl="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION['token'];
 $sessionjson = file_get_contents($sessionsurl);

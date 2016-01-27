@@ -1,4 +1,5 @@
 <?php
+//attempts at using HTML5 to upload pictures as a replacement of snapamobot
 //http://trinityblog.in/html5/2014/capture-and-save-image-with-html5-and-php
 //https://gist.github.com/miguelmota/6403122
 include "header.php";

@@ -1,4 +1,5 @@
 <?php 
+//SQLite3 management script
 //
 // This is sample configuration file
 //

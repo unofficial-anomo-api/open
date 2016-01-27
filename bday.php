@@ -1,4 +1,5 @@
 <?php
+//lets you update birthday on profile
 session_start();
 include "session.php";
 

@@ -1,4 +1,5 @@
 <?php
+//auto follows people following user
 $token = "blank";
 $userid = "blank";
 

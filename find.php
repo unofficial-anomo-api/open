@@ -1,4 +1,5 @@
 <?php
+//searches for given username. results may be sorted from server by activity rather than spelling order
 session_start();
 include "header.php";
 include "session.php";

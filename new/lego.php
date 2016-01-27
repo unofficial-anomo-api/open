@@ -1,4 +1,5 @@
 <?php
+//lego avatar stuff
 session_start();
 include "header.php";
 include "session.php";

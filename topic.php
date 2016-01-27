@@ -1,4 +1,6 @@
 <?php
+//This retrieves stream topic names. Never implemented the streams in the client much more than this.
+
 session_start();
 include "header.php";
 include "session.php";

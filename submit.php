@@ -1,4 +1,5 @@
 <?php
+//used to upload generated lego avatar to the reveal pictures and set it as the users avatar
 session_start();
 $hid = $_SESSION["headided"];
 $tid = $_SESSION["torsoided"];

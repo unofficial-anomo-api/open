@@ -1,4 +1,5 @@
 <?php
+//facebook login and sets variables for user account
 session_start();
 //Check if we have received a connection_token
 $db = new SQLite3('db.db');

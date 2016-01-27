@@ -1,4 +1,5 @@
 <?php
+//uploads avatar pictures to user reveal pictures and updates the profile with images
 include "header.php";
 include "session.php";
 include "menu.php";

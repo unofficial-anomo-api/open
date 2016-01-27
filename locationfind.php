@@ -1,4 +1,5 @@
 <?php
+//searches location passed to script using google location api to convert to lat and long and returns users within proximity to givne location. that is to say, users who aren't set to earth within that proximity.
 session_start();
 include "header.php";
 include "session.php";

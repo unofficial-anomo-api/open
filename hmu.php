@@ -1,4 +1,5 @@
 <?php
+//hmu bot script that searched the feed for the characters HMU
 //usertoken
 include "token.php";
 //avatars

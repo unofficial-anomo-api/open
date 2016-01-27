@@ -1,4 +1,5 @@
 <?php
+//checks how many users are in the freeconference.com conference call and updates a user About Me with details
 $cookie_jar = tempnam('/tmp','cookie');
 $c = curl_init('https://hello.freeconference.com/conf/fetch/$accesscode?access_code=$accesscode');
 curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);

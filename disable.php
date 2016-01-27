@@ -1,4 +1,5 @@
 <?php
+//disables notification for comments and likes on a post
 session_start();
 include "session.php";
 $token = $_SESSION["token"];

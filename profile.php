@@ -1,5 +1,5 @@
 <?php
-
+//grabs user profile then spits out details. then grabs the users posts and spits them out. There's some added features such as searching through user posts for given text string and reporting the user
 session_start();
 include "session.php";
 include "header.php";

@@ -1,4 +1,6 @@
 <?php
+//goes through logged in user's follower list and follows anyone that isn't followed already
+
 $token = "blank";
 $userid = "blank";
 

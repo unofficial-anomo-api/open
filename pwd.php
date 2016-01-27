@@ -1,4 +1,6 @@
 <?php
+//used to update user passwords. If account is associated with facebook account and no password set this allows you to set a password for the account so that username/password can then be used.
+
 session_start();
 include "session.php";
 
