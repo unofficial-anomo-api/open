@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really simple script for updating the avatar on a profile.<br>
+Replace the <YourToken> below with the token generated in the login.html example.<br>
+Fill in the Small and Profile Avatar Pictures with the file names generated in the revealUpload.html example.<br>
+The reply should include the file names for the Avatar and FullPhoto fields for the files you specified in this portion.
+<br><br>
+			<form action="http://ws.anomo.com/v208/index.php/webservice/user/update/<YourToken>" method="post">
+			<br>Small Avatar Picture<br>
+			<input type="text" name="Photo" ><br><br>
+			Profile Avatar Picture<br>
+			<input type="text" name="FullPhoto"><br>
+			<button type="submit" >Sign in</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
