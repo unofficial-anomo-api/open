@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really simple way of uploading images for the purpose of changing your avatar<br>
+Replace the <YourToken> in the form url with the token generated in the Login.html example page.<br>
+The result will be in JSON with a link to the image similar to this https:\/\/anomo-production1.s3.amazonaws.com\/upload\/<br>
+The file name at the end of that url is what needs to be updated for the Avatar. Save it for the avatar.html example page.
+<br><br>
+			<form action="https://ws.anomo.com/v209/index.php/webservice/user/update_secret_picture/<YourToken>" method="post" enctype="multipart/form-data">
+			<br>Image:<br>
+			<input type="file" name="SecretPicture" value="SecretPicture"><br><br>
+			<button type="submit" >Upload</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
