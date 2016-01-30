@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really lazy and simple example of how to use the invite function to increase your user points.<br>
+Since they don't validate numbers, for international reasons, you can pass any numeric value to the invite service to count.<b>
+The invite.php generates numbers based on an area code you provide, to look more legit, but anything will work.<br>
+Invite.php calculates the number of points the user has and subtracts it from 130,000 to determine how many points the <br>
+user is missing from getting a Fan Page. It then generates that many phone numbers, rounded up, to invite.<br>
+You can have any number of consecutive entries as long as they're separated by a semi colon ";".<br>
+As per usual, replace <YourToken> with the token generated when you used login.html.
+<br><br>
+			<form action="http://ws.anomo.com/v209/index.php/webservice/invite_friend/sms/<YourToken>" method="post">
+			<br>Numbers<br>
+			<input type="text" name="PhoneNumbers" size="20"><br><br>
+			<button type="submit" >Invite</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
