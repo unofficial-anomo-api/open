@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really simple script that shows you how post as status to the feed. The status is sent in JSON format.<br>
+You can add tagging but I can't remember how that works. If you look through the feed for tagged status' you can find<br>
+examples of it and just copy that.<br>
+<br><br>
+			<form action="http://ws.anomo.com/v208/index.php/webservice/user/update/<YourToken>" method="post">
+			Status
+			<input type="text" size="50" name="ProfileStatus" placeholder="{&quot;message&quot;:&quot;YourCommentHere&quot;,&quot;message_tags&quot;:[]}"><br>
+			<input type="checkbox" name="IsAnonymous">This dictates whether the status will be anonymous.<br>
+			<button type="submit" >Change Location</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
