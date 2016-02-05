@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+</head>
+<body>
+<center>
+This is a really simple script that shows you how post as picture to the feed. you can't post anon.<br>
+<br><br>
+			<form action="http://ws.anomo.com/v208/index.php/webservice/user/post_picture_activity/<YourToken>" method="post" enctype="multipart/form-data">
+			Status
+			<input type="text" size="50" name="PictureCaption" placeholder="{&quot;message&quot;:&quot;YourCommentHere&quot;,&quot;message_tags&quot;:[]}"><br>
+			<input type="file" name="Photo"><br>
+			<button type="submit" >Post Picture</button>
+<br><br>
+The resulting response from Anomo should be JSON formated data. You can copy the text and paste it into <a href="jsonviewer.stack.hu">jsonviewer.stack.hu</a> for viewing in a prettier format.</center>			
+</body>
+</hmtl>
