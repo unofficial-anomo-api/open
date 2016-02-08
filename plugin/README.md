@@ -1,0 +1,1 @@
+These are a collection of individual files from the root folder that can run as themselves once you've logged in. You can rip the /new/ avatar changer apart to get them to work with that as a template or just add them to that and create a menu system for them, whatever works best for you.
