@@ -2,8 +2,8 @@
 //modified version of the Pusheen bot as a birthday gift for @whysoserious. grabbed the feed whenever cron job (every 10 in this case) ran the script. the script only processes that set of data, usually 23 posts worth, and checks for specific words then posts acordingly.
 $token = "blank";
 
-$surl = "https://ws.anomo.com/v208/index.php/webservice/activity/get_activities/$token/1/3/-1/0/0/0/0/0";
-$url="https://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/1/3/";
+$surl = "https://ws.anomo.com/v210/index.php/webservice/activity/get_activities/$token/1/3/-1/0/0/0/0/0";
+$url="https://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/1/3/";
 $jsonData = file_get_contents($url);
 $phpArray = json_decode($jsonData, true);
 $db = new SQLite3('/var/www/anmct/pusheen.db');
@@ -27,10 +27,10 @@ foreach($phpArray['Activities'] as $item) {
 	$numRows = $row['count'];
 	if ($numRows == "0"){
 	if ($userid == "128335"){
-	$url = "https://ws.anomo.com/v208/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
+	$url = "https://ws.anomo.com/v210/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
 	$jsonData = file_get_contents($url);
 	$phpArray = json_decode($jsonData);
-	$url2 = "https://ws.anomo.com/v208/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
+	$url2 = "https://ws.anomo.com/v210/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
 	$chs = curl_init( $url2 );
 	curl_setopt( $chs, CURLOPT_POST, 1);
 	curl_setopt ($chs, CURLOPT_POSTFIELDS, "Content=Meow \n\n  Pusheen loooooves Ryssa");
@@ -43,10 +43,10 @@ foreach($phpArray['Activities'] as $item) {
 	echo $response . "<br>" . $refid . "<br>";
 	echo "here kitty kitty<br>";
 	}else{
-	$url = "https://ws.anomo.com/v208/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
+	$url = "https://ws.anomo.com/v210/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
 	$jsonData = file_get_contents($url);
 	$phpArray = json_decode($jsonData);
-	$url2 = "https://ws.anomo.com/v208/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
+	$url2 = "https://ws.anomo.com/v210/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
 	$chs = curl_init( $url2 );
 	curl_setopt( $chs, CURLOPT_POST, 1);
 	curl_setopt ($chs, CURLOPT_POSTFIELDS, "Content=Maow");
@@ -59,10 +59,10 @@ foreach($phpArray['Activities'] as $item) {
 	echo $response . "<br>" . $refid . "<br>";
 	echo "here kitty kitty<br>";}
 	}elseif (preg_match('/pusheen\*?/im', $str)){
-		$url = "https://ws.anomo.com/v208/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
+		$url = "https://ws.anomo.com/v210/index.php/webservice/activity/like/" . $token . "/" . $refid. "/" . $type;
 	$jsonData = file_get_contents($url);
 	$phpArray = json_decode($jsonData);
-	$url2 = "https://ws.anomo.com/v208/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
+	$url2 = "https://ws.anomo.com/v210/index.php/webservice/activity/comment/" . $token . "/" . $refid. "/" . $type;
 	$chs = curl_init( $url2 );
 	curl_setopt( $chs, CURLOPT_POST, 1);
 	curl_setopt ($chs, CURLOPT_POSTFIELDS, "Content=Maow Maow, $user? =^-^=");

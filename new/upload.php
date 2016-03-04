@@ -37,7 +37,7 @@ if (!empty($_FILES["myFile"])) {
     chmod(UPLOAD_DIR . $name, 0644);
 	$uploaded = UPLOAD_DIR . $name;
 
-$urls="https://ws.anomo.com/v209/index.php/webservice/user/update_secret_picture/$token";
+$urls="https://ws.anomo.com/v210/index.php/webservice/user/update_secret_picture/$token";
 $post = array("SecretPicture"=>"@$uploaded");
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);

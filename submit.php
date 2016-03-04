@@ -69,7 +69,7 @@ imagealphablending($final_img, true);
 imagepng($final_img, "/var/www/anmct/avatars/Photo.$username.png");
 imagedestroy($final_img);
 
-$urls="http://ws.anomo.com/v209/index.php/webservice/user/update_secret_picture/$token";
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update_secret_picture/$token";
 $post = array("SecretPicture"=>"@/var/www/anmct/avatars/FullPhoto." . $username . ".png");
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
@@ -84,7 +84,7 @@ $fpath_parts = pathinfo($FullPhoto);
 $FullPhotod =  $fpath_parts['filename'] . "." . $fpath_parts['extension']; 
 //echo $response . "<br>$FullPhotod<br>";
 
-$urls="http://ws.anomo.com/v209/index.php/webservice/user/update_secret_picture/$token";
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update_secret_picture/$token";
 $post = array("SecretPicture"=>"@/var/www/anmct/avatars/Photo." . $username . ".png");
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
@@ -98,7 +98,7 @@ $Photo = $phpArray->PictureUrl;
 $ppath_parts = pathinfo($Photo);
 $Photod =  $ppath_parts['filename'] . "." . $ppath_parts['extension']; 
 //echo $response . "<br>$Photod<br>";
-$urls = "http://ws.anomo.com/v208/index.php/webservice/user/update/" . $token; 
+$urls = "http://ws.anomo.com/v210/index.php/webservice/user/update/" . $token; 
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
  curl_setopt ($chs, CURLOPT_POSTFIELDS, "Photo=$Photod&FullPhoto=$FullPhotod");

@@ -4,7 +4,7 @@
 $token = "blank";
 //$response = "d";
 /*function costumeChange(){
-$urls = "https://ws.anomo.com/v208/index.php/webservice/user/update/" . $token; 
+$urls = "https://ws.anomo.com/v210/index.php/webservice/user/update/" . $token; 
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
  curl_setopt ($chs, CURLOPT_POSTFIELDS, "Photo=$photo&FullPhoto=$fullphoto");
@@ -23,7 +23,7 @@ switch ($costume) {
 		$birthday_head = "a3f417433c53ac477384a2e66c2daede.png";
 		$photo = $birthday_head;
 		//costumeChange($photo,$fullphoto);
-		$urls = "https://ws.anomo.com/v208/index.php/webservice/user/update/" . $token; 
+		$urls = "https://ws.anomo.com/v210/index.php/webservice/user/update/" . $token; 
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
  curl_setopt ($chs, CURLOPT_POSTFIELDS, "Photo=$photo&FullPhoto=$fullphoto");
@@ -40,7 +40,7 @@ $phpArray = json_decode($response);
 		$eating_head = "fc426cdd6e939ef75548a81676028d3c.png";
 		$photo = $eating_head;
 		//costumeChange($photo,$fullphoto);
-		$urls = "https://ws.anomo.com/v208/index.php/webservice/user/update/" . $token; 
+		$urls = "https://ws.anomo.com/v210/index.php/webservice/user/update/" . $token; 
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
  curl_setopt ($chs, CURLOPT_POSTFIELDS, "Photo=$photo&FullPhoto=$fullphoto");

@@ -57,7 +57,7 @@ while ($row = $results->fetchArray()) {
     $refid = $row['refid'];
 
 
-	$url = "http://ws.anomo.com/v208/index.php/webservice/activity/detail/$token/$refid/1";
+	$url = "http://ws.anomo.com/v210/index.php/webservice/activity/detail/$token/$refid/1";
 $jsonData = file_get_contents($url);
 //print $url . "<br>";
 $phpArray = json_decode($jsonData);

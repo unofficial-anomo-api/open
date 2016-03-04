@@ -4,7 +4,7 @@ session_start();
 $utoken = $_GET['token'];
 //print $_SESSION['token'];
 if(isset($utoken)){
-$tokensurl="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $utoken;
+$tokensurl="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $utoken;
 $tokenjson = file_get_contents($tokenurl);
 $phpArray = json_decode($tokenjson);
 //print_r($phpArray);
@@ -13,7 +13,7 @@ elseif(!isset($username)){
 $username = trim($_POST['username']);
 $password = trim($_POST['password']);
 $encpassword = md5($password);
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/login/";
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/login/";
 	/*print $_SESSION["token"] . "<br>";
 print_r($_SESSION);
 print " <br>";*/			
@@ -56,7 +56,7 @@ if (array_key_exists('X-Forwarded-For', $headers)){
 }
 //print "token " . $_SESSION["token"] . "<br>";
 //print $_SESSION['token'];
-$sessionsurl="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION['token'];
+$sessionsurl="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION['token'];
 $sessionjson = file_get_contents($sessionsurl);
 $sessionArray = json_decode($sessionjson);
 $sessionReply = $sessionArray->code;

@@ -9,7 +9,7 @@ $email = $_POST['email'];
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			
 //change email
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION["token"];
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION["token"];
 //print $_SESSION['token'] . "<br>";
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);

@@ -1,9 +1,9 @@
 <?php
 include "config.php";
 
-$url = "https://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/0/0";
+$url = "https://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/0/0";
 }else{
-$url = "https://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/$id/0";
+$url = "https://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/$id/0";
 }
 $jsonData = file_get_contents($url);
 

@@ -59,7 +59,7 @@ while ($row = $results->fetchArray()) {
 	 $type = $row['type'];
 
 
-	$url = "http://ws.anomo.com/v208/index.php/webservice/activity/detail/$token/$refid/$type";
+	$url = "http://ws.anomo.com/v210/index.php/webservice/activity/detail/$token/$refid/$type";
 $jsonData = file_get_contents($url);
 //print $url . "<br>";
 $phpArray = json_decode($jsonData);

@@ -8,8 +8,8 @@ $hmu_head = "a3f417433c53ac477384a2e66c2daede.png";
 $hmu_body2 = "32089483744c69e074ea36ed2ec83adb.png";
 $hmu_head2 = "fc426cdd6e939ef75548a81676028d3c.png";
 
-$surl = "http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/$token/1/3/-1/0/0/0/0/0";
-$url="http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $hmu;
+$surl = "http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/$token/1/3/-1/0/0/0/0/0";
+$url="http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $hmu;
 $jsonData = file_get_contents($url);
 $phpArray = json_decode($jsonData, true);
 foreach($phpArray['Activities'] as $item) {
@@ -21,10 +21,10 @@ foreach($phpArray['Activities'] as $item) {
 	$refid = $item['RefID'];
 	$str = strtolower($messaged);
 	if(preg_match('/hmu\*?/im', $str)) {
-	$url = "http://ws.anomo.com/v208/index.php/webservice/activity/like/" . $hmu . "/" . $refid. "/" . $type;
+	$url = "http://ws.anomo.com/v210/index.php/webservice/activity/like/" . $hmu . "/" . $refid. "/" . $type;
 	$jsonData = file_get_contents($url);
 	$phpArray = json_decode($jsonData);
-	$url2 = "http://ws.anomo.com/v208/index.php/webservice/activity/comment/" . $hmu . "/" . $refid. "/" . $type;
+	$url2 = "http://ws.anomo.com/v210/index.php/webservice/activity/comment/" . $hmu . "/" . $refid. "/" . $type;
 	$chs = curl_init( $url2 );
 	curl_setopt( $chs, CURLOPT_POST, 1);
 	curl_setopt ($chs, CURLOPT_POSTFIELDS, "Content=HMUUUUUUU \n\n Will you ring my bell?");

@@ -4,7 +4,7 @@ session_start();
 include "header.php";
 include "session.php";
 $token = $_SESSION["token"];
-$url = "http://ws.anomo.com/v209/index.php/webservice/stream/get_list_category/" . $token;
+$url = "http://ws.anomo.com/v210/index.php/webservice/stream/get_list_category/" . $token;
 $jsonData = file_get_contents($url);
 //print $url;
 $phpArray = json_decode($jsonData, true);

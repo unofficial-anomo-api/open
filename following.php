@@ -17,7 +17,7 @@ $userid = $_GET['userid'];
 if (!isset($userid)){
 $userid = $_SESSION['userid'];
 }
-$url = "http://ws.anomo.com/v208/index.php/webservice/user/get_list_following/$token/$userid/$page";
+$url = "http://ws.anomo.com/v210/index.php/webservice/user/get_list_following/$token/$userid/$page";
 $jsonData = file_get_contents($url);
 $phpArray = json_decode($jsonData, true);
 $phpArray2 = json_decode($jsonData);

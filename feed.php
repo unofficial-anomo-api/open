@@ -4,7 +4,7 @@ session_start();
 include "header.php";
 include "session.php";
 $token = $_SESSION["token"];
-$nurl="http://ws.anomo.com/v208/index.php/webservice/user/get_user_info/" . $token . "/63977";
+$nurl="http://ws.anomo.com/v210/index.php/webservice/user/get_user_info/" . $token . "/63977";
 $njsonData = file_get_contents($nurl);
 //print $url . "<br>";
 $nphpArray = json_decode($njsonData);
@@ -17,12 +17,12 @@ $delete = $_POST['delete'];
 $id = $_GET['id'];
 $system = $_GET['system'];
 if (isset($system)){
-$sysurl = "http://ws.anomo.com/v208/index.php/webservice/activity/close_announcement/$token/$system";
+$sysurl = "http://ws.anomo.com/v210/index.php/webservice/activity/close_announcement/$token/$system";
 $sysData = file_get_contents($sysurl);
 $sysArray = json_decode($sysData);
 }
 if(isset($delete)){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/user/delete_activity/$token/$delete";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/user/delete_activity/$token/$delete";
 $followData = file_get_contents($furl);
 //print $furl;
 //print "<br>";
@@ -31,7 +31,7 @@ $followArray = json_decode($followData);
 }
 $follow = $_POST['follow'];
 if(isset($follow)){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/user/follow/$token/$follow";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/user/follow/$token/$follow";
 $followData = file_get_contents($furl);
 //print $url;
 $followArray = json_decode($followData);
@@ -39,7 +39,7 @@ $followArray = json_decode($followData);
 $block = $_POST['block'];
 
 if(isset($block)){
-$burl = "http://ws.anomo.com/v208/index.php/webservice/user/block_user/$token/$block";
+$burl = "http://ws.anomo.com/v210/index.php/webservice/user/block_user/$token/$block";
 $blockData = file_get_contents($burl);
 //print $url;
 $blockArray = json_decode($blockData);
@@ -54,7 +54,7 @@ $headers = array("Content-Type:multipart/form-data");
 $rpost = array(
 	'Content' => "$reporting"
 );
-$rurls="http://ws.anomo.com/v208/index.php/webservice/flag/content/$token/$report/$typing/0";
+$rurls="http://ws.anomo.com/v210/index.php/webservice/flag/content/$token/$report/$typing/0";
 $rchs = curl_init( $rurls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($rchs, CURLOPT_POSTFIELDS, $rpost);
@@ -125,7 +125,7 @@ $post = array(
 	'ProfileStatus' => "{\"message\":\"$comment\",\"message_tags\":[]}",
     'IsAnonymous' => "$anon"
 );
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION["token"];
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION["token"];
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($chs, CURLOPT_POSTFIELDS, $post);
@@ -461,9 +461,9 @@ echo "<div class=\"panel panel-default\">
 					</div></div>";
 
 if (!isset($id)){
-$url = "http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/0/0";
+$url = "http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/0/0";
 }else{
-$url = "http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/$id/0";
+$url = "http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $min . "/" . $max . "/$id/0";
 }
 $jsonData = file_get_contents($url);
 //print $url;
@@ -540,7 +540,7 @@ echo "<div class=\"media\">
 <a href=\"profile.php?id=$userid\" class=\"pull-left\"><img src=\"" . $avatard . "\" height=40 width=40 class=\"media-object\" alt='' /></a><p align=\"right\"><a id=\"modal-$userid\" href=\"#modal-container-$userid\" role=\"button\" class=\"btn\" data-toggle=\"modal\">|||</a></p>
 <div class=\"media-body\">";
 if (isset($fanpage)){
-$fanurl="http://ws.anomo.com/v208/index.php/webservice/user/get_user_info/" . $token . "/" . $fanpage;
+$fanurl="http://ws.anomo.com/v210/index.php/webservice/user/get_user_info/" . $token . "/" . $fanpage;
 $fanData = file_get_contents($fanurl);
 //print $fanurl . "<br>";
 $fanArray = json_decode($fanData);

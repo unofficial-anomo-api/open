@@ -1,4 +1,4 @@
 <?php
-$version = "https://ws.anomo.com/v208/index.php/webservice";
+$version = "https://ws.anomo.com/v210/index.php/webservice";
 
 ?>

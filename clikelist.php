@@ -5,7 +5,7 @@ include "header.php";
 include "session.php";
 $token = $_SESSION["token"];
 $id = $_GET['id'];
-$url = "http://ws.anomo.com/v208/index.php/webservice/comment/likelist/$token/$id/1";
+$url = "http://ws.anomo.com/v210/index.php/webservice/comment/likelist/$token/$id/1";
 $profileData = file_get_contents($url);
 $phpArray = json_decode($profileData, true);
 //print $url . "<br>";

@@ -10,7 +10,7 @@ $date_regex = '/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01]
 if (preg_match($date_regex, $dob)) {
 			
 //change dob
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION["token"];
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION["token"];
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($chs, CURLOPT_POSTFIELDS, "BirthDate=$olddob");

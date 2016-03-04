@@ -46,9 +46,9 @@ $lons = $array['longitude'];
 //echo $lats . "/" . $lons;
 if(isset($city)){
 if (isset($next)){
-$urls = "http://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/" . $next . "/0/18/100";
+$urls = "http://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/" . $next . "/0/18/100";
 }else{
-$urls = "http://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/1/0/18/100";
+$urls = "http://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/1/0/18/100";
 }
 //echo $urls;
 $chs = curl_init( $urls );

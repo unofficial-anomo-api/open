@@ -2,9 +2,9 @@
 include "config.php";
 
 if (isset($next)){
-$urls = "https://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/" . $next . "/0/18/100";
+$urls = "https://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/" . $next . "/0/18/100";
 }else{
-$urls = "https://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/1/0/18/100";
+$urls = "https://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/" . $lats . "/" . $lons . "/1/0/18/100";
 }
 
 $chs = curl_init( $urls );

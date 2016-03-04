@@ -17,7 +17,7 @@ $messaged = $_POST['messaged'];
 $delid = $_SESSION["userid"];
 $delete = $_POST['delete'];
 if(isset($delete)){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/user/delete_activity/$token/$delete";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/user/delete_activity/$token/$delete";
 $followData = file_get_contents($furl);
 //print $furl;
 //print "<br>";
@@ -33,14 +33,14 @@ $db->exec("INSERT INTO subscribe (refid, userid, type) VALUES (\"$refid\", \"$de
 echo "inserted<br>";
 }
 if($liked == "1"){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/activity/like/$token/$refid/$type/false";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/activity/like/$token/$refid/$type/false";
 $followData = file_get_contents($furl);
 //print $furl;
 echo $followArray;
 }
 $follow = $_POST['follow'];
 if(isset($follow)){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/user/follow/$token/$follow";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/user/follow/$token/$follow";
 $followData = file_get_contents($furl);
 //print $url;
 $followArray = json_decode($followData);
@@ -48,7 +48,7 @@ $followArray = json_decode($followData);
 $block = $_POST['block'];
 
 if(isset($block)){
-$burl = "http://ws.anomo.com/v208/index.php/webservice/user/block_user/$token/$block";
+$burl = "http://ws.anomo.com/v210/index.php/webservice/user/block_user/$token/$block";
 $blockData = file_get_contents($burl);
 //print $url;
 $blockArray = json_decode($blockData);
@@ -63,7 +63,7 @@ $headers = array("Content-Type:multipart/form-data");
 $rpost = array(
 	'Content' => "$reporting"
 );
-$rurls="http://ws.anomo.com/v208/index.php/webservice/flag/content/$token/$report/$typing/0";
+$rurls="http://ws.anomo.com/v210/index.php/webservice/flag/content/$token/$report/$typing/0";
 $rchs = curl_init( $rurls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($rchs, CURLOPT_POSTFIELDS, $rpost);
@@ -87,7 +87,7 @@ $post = array(
 	'Content' => "$content",
 	'IsAnonymous' => "$anon"
 );
-$urls="http://ws.anomo.com/v208/index.php/webservice/activity/comment/" . $token . "/" . $prefid . "/" . $ptype;
+$urls="http://ws.anomo.com/v210/index.php/webservice/activity/comment/" . $token . "/" . $prefid . "/" . $ptype;
 //print $urls . "<br>";
 //print $content . "<br>";
 $headers = array("Content-Type:multipart/form-data"); 
@@ -106,7 +106,7 @@ $phpArray = json_decode($responses);
 //echo $responses;
 echo "<div align=\"center\" class=\"alert alert-success alert-dismissable\"><h4>Posted Fan Comment</h4></div>";
 }
-$url = "http://ws.anomo.com/v208/index.php/webservice/activity/detail/$token/$refid/$type";
+$url = "http://ws.anomo.com/v210/index.php/webservice/activity/detail/$token/$refid/$type";
 $jsonData = file_get_contents($url);
 //print $url . "<br>";
 $phpArray = json_decode($jsonData, true);

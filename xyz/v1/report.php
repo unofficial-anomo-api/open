@@ -9,7 +9,7 @@ $headers = array("Content-Type:multipart/form-data");
 $rpost = array(
 	'Content' => "$reporting"
 );
-$rurls="https://ws.anomo.com/v208/index.php/webservice/flag/content/$token/$report/$typing/0";
+$rurls="https://ws.anomo.com/v210/index.php/webservice/flag/content/$token/$report/$typing/0";
 $rchs = curl_init( $rurls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($rchs, CURLOPT_POSTFIELDS, $rpost);

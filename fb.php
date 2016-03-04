@@ -12,7 +12,7 @@ $fb = $_POST['fb'];
 if (isset($fb)) {
 			
 //change pwd
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION["token"];
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION["token"];
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($chs, CURLOPT_POSTFIELDS, "FacebookID=$fb");

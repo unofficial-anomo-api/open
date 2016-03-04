@@ -14,9 +14,9 @@ $max = 5;
 
 while ($count < $max){
 if (!isset($aid)){
-$purl = "http://ws.anomo.com/v209/index.php/webservice/user/get_all_user_post/$token/$userid/0/0";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/0/0";
 }else{
-$purl = "http://ws.anomo.com/v209/index.php/webservice/user/get_all_user_post/$token/$userid/0/$aid/";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/0/$aid/";
 }
 print $purl . "<br>";
 $profileData = file_get_contents($purl);

@@ -6,7 +6,7 @@ include "session.php";
 $token = $_SESSION["token"];
 $refid = $_GET['refid'];
 $posttype = $_GET['type'];
-$url = "http://ws.anomo.com/v208/index.php/webservice/activity/likelist/$token/$refid/$posttype";
+$url = "http://ws.anomo.com/v210/index.php/webservice/activity/likelist/$token/$refid/$posttype";
 $profileData = file_get_contents($url);
 $phpArray = json_decode($profileData, true);
 echo "<div class=\"panel panel-default\"><h1>Like List</h1>";

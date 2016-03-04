@@ -12,7 +12,7 @@ $comment = $_POST['comment'];
 $messaged = $_POST['messaged'];
 $follow = $_POST['follow'];
 if(isset($follow)){
-$furl = "http://ws.anomo.com/v208/index.php/webservice/user/follow/$token/$follow";
+$furl = "http://ws.anomo.com/v210/index.php/webservice/user/follow/$token/$follow";
 $followData = file_get_contents($furl);
 //print $url;
 $followArray = json_decode($followData);
@@ -32,7 +32,7 @@ $headers = array("Content-Type:multipart/form-data");
 $rpost = array(
 	'Content' => "$reporting"
 );
-$rurls="http://ws.anomo.com/v208/index.php/webservice/flag/add/$token/$report";
+$rurls="http://ws.anomo.com/v210/index.php/webservice/flag/add/$token/$report";
 $rchs = curl_init( $rurls );
 curl_setopt( $chs, CURLOPT_POST, 1);
 curl_setopt ($rchs, CURLOPT_POSTFIELDS, $rpost);
@@ -62,7 +62,7 @@ $post = array(
     'IsAnonymous' => "$anon",
     'FanPage' => "$userid"
 );
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION["token"];
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION["token"];
 //print $urls . "<BR>";
 //print_r($post);
 //print " <br>";
@@ -80,7 +80,7 @@ $responses = curl_exec( $chs );
 $phpArray = json_decode($responses);
 echo "<div align=\"center\" class=\"alert alert-success alert-dismissable\"><h4>Posted Fan Comment</h4></div>";
 }
-$url="http://ws.anomo.com/v208/index.php/webservice/user/get_user_info/" . $token . "/" . $userid;
+$url="http://ws.anomo.com/v210/index.php/webservice/user/get_user_info/" . $token . "/" . $userid;
 $jsonData = file_get_contents($url);
 //print $url . "<br>";
 $phpArray = json_decode($jsonData);
@@ -180,9 +180,9 @@ echo "<div class=\"panel panel-default\">
 }
 			
 if (!isset($aid)){
-$purl = "http://ws.anomo.com/v208/index.php/webservice/user/get_all_user_post/$token/$userid/$fpost/0";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/$fpost/0";
 }else{
-$purl = "http://ws.anomo.com/v208/index.php/webservice/user/get_all_user_post/$token/$userid/$fpost/$aid/";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/$fpost/$aid/";
 }
 //print $purl;
 $profileData = file_get_contents($purl);

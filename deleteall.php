@@ -14,7 +14,7 @@ while ($row = $rows->fetchArray()) {
 $activityid = $row['activityid'];
 
 
-$likeurl = "https://ws.anomo.com/v208/index.php/webservice/user/delete_activity/$token/$activityid";
+$likeurl = "https://ws.anomo.com/v210/index.php/webservice/user/delete_activity/$token/$activityid";
 //print $likeurl . "<br><br>";
 $profileData2 = file_get_contents($likeurl);
 $phpArray3 = json_decode($profileData2);

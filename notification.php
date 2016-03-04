@@ -14,7 +14,7 @@ else{
 $_SESSION["page"] = $page;
 }
 
-$url = "http://ws.anomo.com/v209/index.php/webservice/push_notification/get_notification_history/$token/0/$page";
+$url = "http://ws.anomo.com/v210/index.php/webservice/push_notification/get_notification_history/$token/0/$page";
 $jsonData = file_get_contents($url);
 //print $url;
 $phpArray = json_decode($jsonData, true);

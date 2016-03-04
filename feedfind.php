@@ -18,9 +18,9 @@ $db->exec("INSERT INTO feedfind (searching, searched) VALUES (\"$search\", \"$us
 while ($count < $max){
 $next = 0;
 if (!isset($id)){
-$purl = "http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $minage . "/" . $maxage . "/0/0";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $minage . "/" . $maxage . "/0/0";
 }else{
-$purl = "http://ws.anomo.com/v208/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $minage . "/" . $maxage . "/$id/0";
+$purl = "http://ws.anomo.com/v210/index.php/webservice/activity/get_activities/" . $token . "/" . $type . "/" . $tab . "/0/" . $gender . "/" . $minage . "/" . $maxage . "/$id/0";
 }
 //print $purl . "<br>";
 echo "<div class=\"panel panel-default\">

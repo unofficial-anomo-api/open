@@ -9,9 +9,9 @@ $next = $_GET['next'];
 $user = $_POST['user'];
 if(isset($user)){
 if (isset($next)){
-$urls = "http://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/null/null/" . $next . "/0/18/100";
+$urls = "http://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/null/null/" . $next . "/0/18/100";
 }else{
-$urls = "http://ws.anomo.com/v208/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/null/null/1/0/18/100";
+$urls = "http://ws.anomo.com/v210/index.php/webservice/user/search_user/" . $token . "/" . $userid . "/null/null/1/0/18/100";
 }
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);

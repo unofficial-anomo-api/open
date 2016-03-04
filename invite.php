@@ -6,7 +6,7 @@ include "session.php";
 $token = $_SESSION['token'];//"233XVQQUV8JR8NMSUSXO";
 $userid = $_SESSION['userid'];
 $areacode = $_GET['areacode'];
-$urls="http://ws.anomo.com/v209/index.php/webservice/user/update/" . $token;
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $token;
 //print $urls . "<br>";
 $chst = curl_init( $urls );
 curl_setopt( $chst, CURLOPT_POST, 1);
@@ -48,7 +48,7 @@ $rpost = array(
 	'PhoneNumbers' => "$phonenum"
 );
 //$headers = array("Content-Type:multipart/form-data");
-$url = "http://ws.anomo.com/v209/index.php/webservice/invite_friend/sms/$token";
+$url = "http://ws.anomo.com/v210/index.php/webservice/invite_friend/sms/$token";
 //print $url . "<br>" . $phonenum . "<br>";
 $chs = curl_init($url);
 curl_setopt( $chs, CURLOPT_POST, 1);

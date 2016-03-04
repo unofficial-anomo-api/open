@@ -7,7 +7,7 @@ include "menu.php";
 if (isset($_SESSION['body'])){
 	$fullphoto = $_SESSION['body'];
 	$headphoto = $_SESSION['head'];
-	$urls = "https://ws.anomo.com/v208/index.php/webservice/user/update/" . $token; 
+	$urls = "https://ws.anomo.com/v210/index.php/webservice/user/update/" . $token; 
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);
  curl_setopt ($chs, CURLOPT_POSTFIELDS, "Photo=$headphoto&FullPhoto=$fullphoto");

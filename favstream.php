@@ -4,7 +4,7 @@ session_start();
 include "header.php";
 include "session.php";
 $token = $_SESSION["token"];
-$url = "https://ws.anomo.com/v209/index.php/webservice/stream/get_list_favorite/" . $token;
+$url = "https://ws.anomo.com/v210/index.php/webservice/stream/get_list_favorite/" . $token;
 $jsonData = file_get_contents($url);
 //print $url;
 $phpArray = json_decode($jsonData, true);

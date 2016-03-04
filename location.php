@@ -9,7 +9,7 @@ $location = $_POST['location'];
 
 if(isset($location)){	
 //change email
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/update_user_location/" . $_SESSION["token"] . "/0/0";
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/update_user_location/" . $_SESSION["token"] . "/0/0";
 //print $_SESSION['token'] . "<br>";
 $chs = curl_init( $urls );
 curl_setopt( $chs, CURLOPT_POST, 1);

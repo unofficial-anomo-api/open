@@ -7,7 +7,7 @@ while ($key < 23){
 $refid = $phpArray->Activities[$key]->RefID;
 $type = $phpArray->Activities[$key]->Type;
 $comment = $phpArray->Activities[$key]->Comment;
-$rurl="https://ws.anomo.com/v208/index.php/webservice/activity/detail/" . $token . "/" . $refid . "/" . $type;
+$rurl="https://ws.anomo.com/v210/index.php/webservice/activity/detail/" . $token . "/" . $refid . "/" . $type;
 $refData = file_get_contents($rurl);
 $refArray = json_decode($refData);
 //print $rurl . "<br>";

@@ -8,7 +8,7 @@ $search = $_GET['search'];
 $searched = $_SESSION['userid'];
 $count = 0;
 $max = 50;
-$url="https://ws.anomo.com/v208/index.php/webservice/user/get_user_info/" . $token . "/" . $userid;
+$url="https://ws.anomo.com/v210/index.php/webservice/user/get_user_info/" . $token . "/" . $userid;
 $jsonData = file_get_contents($url);
 //print $url . "<br>";
 $phpArray = json_decode($jsonData);
@@ -85,9 +85,9 @@ print "<div class=\"panel panel-default\" style=\"background-image: url($coverpi
 if (isset($userid, $search)){
 while ($count < $max){
 if (!isset($aid)){
-$purl = "https://ws.anomo.com/v208/index.php/webservice/user/get_all_user_post/$token/$userid/0/0";
+$purl = "https://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/0/0";
 }else{
-$purl = "https://ws.anomo.com/v208/index.php/webservice/user/get_all_user_post/$token/$userid/0/$aid/";
+$purl = "https://ws.anomo.com/v210/index.php/webservice/user/get_all_user_post/$token/$userid/0/$aid/";
 }
 //print $purl;
 $profileData = file_get_contents($purl);

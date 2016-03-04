@@ -48,7 +48,7 @@ $rpost = array(
 	'FbAccessToken' => "$fbid",
 	'Email' => "$fbemail"
 );
-$urls="http://ws.anomo.com/v208/index.php/webservice/user/login_with_fb/";
+$urls="http://ws.anomo.com/v210/index.php/webservice/user/login_with_fb/";
 //print $urls . "<br>" . $myvars;
 //print_r($rpost);
 $headers = array("Content-Type:multipart/form-data");
@@ -89,7 +89,7 @@ if (array_key_exists('X-Forwarded-For', $headers)){
 }
 //print "token " . $_SESSION["token"] . "<br>";
 //print $_SESSION['token'];
-$sessionsurl="http://ws.anomo.com/v208/index.php/webservice/user/update/" . $_SESSION['token'];
+$sessionsurl="http://ws.anomo.com/v210/index.php/webservice/user/update/" . $_SESSION['token'];
 $sessionjson = file_get_contents($sessionsurl);
 $sessionArray = json_decode($sessionjson);
 $sessionReply = $sessionArray->code;
