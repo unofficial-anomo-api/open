@@ -1,5 +1,5 @@
 # open
-This is a completely unofficial client for Anomo.com. It includes a half-assed client to their mobile app as well as some addons like an avatar changer and some simple bots. The folder xyz also has a half built api proxy that should list most of the functions for interacting with the system.
+This is a bunch of unofficial api stuff for Anomo.com that I've done. It includes a new half-assed client update from the last one, half-assed oldclient to their mobile app as well as some addons like an avatar changer and some simple bots. 
 
 I've sanatized some of the details and too lazy to add the db details and most of it isn't commented. 
 
