@@ -6,3 +6,5 @@ I've sanatized some of the details and too lazy to add the db details and most o
 If you really have questions about any of it you can email me at nason000 at gmail.com but I can't promise that I'll respond.
 
 You can find more details in the wiki.
+
+You can see a demo of the current state of the new half-assed client <a href="http://anomo.online/site">HERE</a>
